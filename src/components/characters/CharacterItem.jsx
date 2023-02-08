@@ -16,8 +16,8 @@ function CharacterItem({
         <h2 className="card-title">
           {name}
           <div
-            className={`badge badge-${
-              status === "Alive" ? "success" : "error"
+            className={`badge ${
+              status === "Alive" ? "badge-success" : "badge-error"
             }`}
           >
             {status}

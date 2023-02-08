@@ -5,9 +5,10 @@ import Spinner from "../Spinner";
 
 function CharactersResults() {
   const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  const { data, setData, setAlertCall } = useContext(SearchContext);
+  const { data, setData, setAlertCall, loading, setLoading } =
+    useContext(SearchContext);
 
   useEffect(() => {
     fetchCharacters();
@@ -25,7 +26,7 @@ function CharactersResults() {
         if (response.ok === false) {
           setLoading(false);
           setData([]);
-          setAlertCall(true)
+          setAlertCall(true);
           return;
         }
 
