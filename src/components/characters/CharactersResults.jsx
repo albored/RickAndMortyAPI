@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import SearchContext from "../context/CharacterContext";
-import CharacterItem from "./characterItem";
+import CharacterItem from "./CharacterItem";
 import Spinner from "../Spinner";
 
 function CharactersResults() {
