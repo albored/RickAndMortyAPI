@@ -14,7 +14,7 @@ function CharacterList() {
   async function allCharacters() {
     setLoading(true);
     const response = await fetch(
-      `${import.meta.env.VITE_REACT_APP_URL}?page=${query}`
+      `https://rickandmortyapi.com/api/character?page=${query}`
     );
 
     const data = await response.json();

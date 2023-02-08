@@ -20,7 +20,7 @@ function CharactersResults() {
       if (data.length > 0) {
         setLoading(true);
         const response = await fetch(
-          `${import.meta.env.VITE_REACT_APP_URL}?&name=${data}`
+          `https://rickandmortyapi.com/api/character?&name=${data}`
         );
 
         if (response.ok === false) {
