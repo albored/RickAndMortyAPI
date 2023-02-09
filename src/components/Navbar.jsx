@@ -16,7 +16,7 @@ function Navbar() {
         <div className="flex items-center">
           <GiMaterialsScience className="w-12 h-12 mr-3" />
           <Link to="/" className="text-lg ">
-            <p className="">Rick And Morty</p>
+            <p className="hidden md:block lg:block xl:block">Rick And Morty</p>
           </Link>
         </div>
         <div className="">
@@ -30,7 +30,9 @@ function Navbar() {
               </button>
             </Link>
             <Link to="/about">
-              <button className="btn">About</button>
+              <button className="btn hidden md:block lg:block xl:block">
+                About
+              </button>
             </Link>
           </div>
         </div>

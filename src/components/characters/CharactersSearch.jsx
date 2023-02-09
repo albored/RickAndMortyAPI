@@ -7,7 +7,7 @@ function CharactersSearch() {
     useContext(SearchContext);
 
   const handleChange = (e) => {
-    setText(e.target.value);
+    setText(e.target.value.toLowerCase());
   };
 
   const handleSubmit = async (e) => {
